@@ -14,14 +14,28 @@ html, body {
     min-height: 100vh;
     position: relative;
     width: 100%;
-    padding: 0 1.8vw;
-    padding-top: 15.2vw;
+    padding: 0 1vw;
+    padding-top: 25.5vh;
 }
 
 #page1 h1{
-    font-size: 15.5vw;
-    font-family: Futura-Bold;
+    font-size: 16.4vw;
+    font-family: futura;
     text-transform: uppercase;
     line-height: 14vw;
-    letter-spacing: -4.2px;
+    letter-spacing: -18px;
+}
+
+#video-container{
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+    margin-top: 2.8vw;
+    position: relative;
+}
+
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
