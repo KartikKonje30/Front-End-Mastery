@@ -1,0 +1,22 @@
+* { 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: xyz;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#page1 h1{
+    font-size: 100vw;
+    font-family: Futura-Bold;
+}
