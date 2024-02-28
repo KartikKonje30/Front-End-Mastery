@@ -19,7 +19,7 @@ html, body {
     min-height: 100vh;
     position: relative;
     width: 100%;
-    padding: 0 1vw;
+    padding: 0 1.5vw;
     padding-top: 25.5vh;
 }
 
@@ -34,7 +34,7 @@ html, body {
 #video-container{
     height: 100vh;
     width: 100%;
-    background-color: grey;
+    /* background-color: grey; */
     margin-top: 2.8vw;
     position: relative;
 }
@@ -56,4 +56,114 @@ html, body {
     border-radius: 50%;
     opacity: 0;
     scale: 0;
+}
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: aqua; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 2vw 1.5vw;
+    justify-content: space-between;
+}
+
+#page2 .elem{
+    height: 100%;
+    width: 32.3%;
+    /* background-color: blue; */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+}
+
+#page2 .elem .dets{
+    height: 50px;
+    border-radius: 50px;
+    width: 68%;
+    position: absolute;
+    z-index: 9;
+    background-color: antiquewhite;
+}
+
+#page2 .elem .dets:hover{
+    height: 200px;
+}
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+@media (max-width:600px){
+
+    #page1{
+        min-height: 70vh;
+        width: 100%;
+        padding: 0 3vw;
+        padding-top: 17.5vh;
+    }
+
+    #page1 h1{
+        font-size: 15.5vw;
+        letter-spacing: -6px;
+    }
+
+    #video-container{
+        height: 25vh;
+        margin-top: 5vw;
+    }
+
+    #video-container #play{
+        padding: 11.9vw 9vw;
+        font-size: 4vw;
+        font-weight: bold;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        border-radius: 50%;
+        opacity: 1;
+        scale: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    #page2{
+        min-height: 100vh;
+        width: 100%;
+        /* background-color: aqua; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3vw 3vw;
+        justify-content: space-between;
+    }
+    
+    #page2 .elem{
+        height: 100vh;
+        width: 100%;
+        /* background-color: blue; */
+        overflow: hidden;
+        margin-bottom: 3vw;
+    }
+
+    #page2 .elem .dets{
+        height: 55px;
+        width: 90%;
+        position: absolute;
+        z-index: 9;
+        background-color: antiquewhite;
+    }
+    
 }

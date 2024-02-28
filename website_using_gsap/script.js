@@ -23,7 +23,6 @@ function videoanimation(){
         })
     })
 }
-
 videoanimation();
 
 function loadinganimation(){
@@ -41,5 +40,9 @@ function loadinganimation(){
         duration: 0.4,
     })
 }
-
 loadinganimation();
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
