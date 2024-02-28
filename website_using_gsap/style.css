@@ -5,6 +5,11 @@
     font-family: 'Gilroy';
 }
 
+*::selection{
+    color: #fff;
+    background-color: black;
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -38,4 +43,17 @@ html, body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+#video-container #play{
+    padding: 2.5vw 2vw;
+    background-color: black;
+    color: #fff;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-family: futura;
+    position: fixed;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
 }
