@@ -19,10 +19,11 @@ body{
 }
 
 #cursor{
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     background-color: bisque;
+    opacity: 50%;
     position: fixed;
     transform: translate(-50%,-50%) scale(0);
 }
@@ -99,16 +100,41 @@ body{
     scale: 1.1;
 }
 
-#page2 .elem .dets{
+#page2 .elem .dets1{
     height: 50px;
     border-radius: 50px;
     width: 68%;
     position: absolute;
     z-index: 9;
-    background-color: antiquewhite;
+    background-color: #dff1c6;
 }
 
-#page2 .elem .dets:hover{
+#page2 .elem .dets2{
+    height: 50px;
+    border-radius: 50px;
+    width: 68%;
+    position: absolute;
+    z-index: 9;
+    background-color: #f6dfc0;
+}
+
+#page2 .elem .dets3{
+    height: 50px;
+    border-radius: 50px;
+    width: 68%;
+    position: absolute;
+    z-index: 9;
+    background-color: #eef1ea;
+}
+
+
+#page2 .elem .dets1:hover{
+    height: 200px;
+}
+#page2 .elem .dets2:hover{
+    height: 200px;
+}
+#page2 .elem .dets3:hover{
     height: 200px;
 }
 
@@ -116,7 +142,6 @@ body{
     min-height: 120vh;
     width: 100%;
     position: relative;
-    background-color: #F7F7F7;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -127,6 +152,7 @@ body{
 .child{
     height: 50vh;
     width: 45vw;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
