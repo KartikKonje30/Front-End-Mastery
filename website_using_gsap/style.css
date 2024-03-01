@@ -14,6 +14,18 @@ html, body {
     height: 100%;
     width: 100%;
 }
+body{
+    background-color: #F7F7F7;
+}
+
+#cursor{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: bisque;
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0);
+}
 
 #page1{
     min-height: 100vh;
@@ -101,10 +113,29 @@ html, body {
 }
 
 #page3{
-    height: 100vh;
+    min-height: 120vh;
     width: 100%;
-    background-color: aquamarine;
+    position: relative;
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
 }
+
+.child{
+    height: 50vh;
+    width: 45vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child img{
+    height: 100%;
+}
+
 
 @media (max-width:600px){
 
