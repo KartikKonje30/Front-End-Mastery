@@ -9,7 +9,7 @@ export default function App() {
       const res = await data.json();
       setCountries(res);
     } catch (error) {
-      console.log("Error fetching data: ", error);
+      console.log(error);
     }
   }
 
