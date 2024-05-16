@@ -1,3 +1,14 @@
+::selection{
+    color: white;
+    background-color: rgb(43, 89, 226);
+}
+
+body{
+    font-size: 20px;
+    text-align: center;
+    font-family: poppins medium;
+}
+
 .block{
     background-color: lightblue; 
     padding: 20px; 
