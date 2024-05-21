@@ -7,6 +7,8 @@ body{
     font-size: 20px;
     text-align: center;
     font-family: poppins medium;
+    align-items: center;
+    justify-content: center;
 }
 
 .block{
@@ -19,3 +21,4 @@ body{
     align-items: center;
     text-align:center;
 }
+
