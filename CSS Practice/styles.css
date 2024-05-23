@@ -1,4 +1,32 @@
 h1{
-    color: rgb(132, 0, 255);
+    color: rgba(132, 0, 255,0.6);
     background-color: aliceblue;
+    
+}
+body{
+    /* Background styling */
+    background-image: url(https://media.istockphoto.com/id/1169630303/photo/blue-textured-background.webp?b=1&s=170667a&w=0&k=20&c=tI2xFhXqXFqMM0IvxSYY3F7LIwv450h2ch3yD-lZ9HU=);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h3{
+    color: antiquewhite;
+    /* Border Styling */
+    border: 1px dotted violet;
+    border-radius: 8px;
+    border-width: 10px;
+    padding: 10px;
+}
+
+#box{
+    height: 100px;
+    border: 50px solid orange;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: greenyellow;
+    margin: 0% 25%;
 }
