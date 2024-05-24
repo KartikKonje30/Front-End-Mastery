@@ -66,3 +66,27 @@ h3{
 #table tr:hover{
     background-color: #bfd1ff;
 }
+
+.block{
+    width: 50%;
+    height: 500px;
+    background-color: rgb(58, 58, 58);
+    border: 10px solid black;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0% 25%;
+}
+
+#blog{
+height: 100px;
+width: 100px;
+text-decoration: none;
+background-color: rgb(248, 182, 61);
+border: 5px solid rgb(255, 64, 64);
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 15px;
+}
