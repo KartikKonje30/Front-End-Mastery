@@ -1,4 +1,4 @@
-import Headers from "./components/Headers";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Body from "./components/Body";
 
@@ -7,8 +7,8 @@ function App() {
 
   return (
     <>
-      <div className="">
-        <Headers />
+      <div className="bg-amber-50">
+        <Header />
         <Body />
         <Footer />
       </div>
