@@ -1,11 +1,17 @@
-
+import Headers from "./components/Headers";
+import Footer from "./components/Footer";
+import Body from "./components/Body";
 
 function App() {
   
 
   return (
     <>
-      <div>Hello World</div>
+      <div className="">
+        <Headers />
+        <Body />
+        <Footer />
+      </div>
     </>
   )
 }
