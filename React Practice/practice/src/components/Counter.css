@@ -1,0 +1,38 @@
+
+body{
+    background-color: #212121;
+    color: white;
+}
+
+.counterBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25vh;
+    gap: 1.5rem;
+}
+
+.counterHead{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.counterButtons{
+    display: flex;
+    gap: 2rem;
+}
+
+button{
+    background-color: white;
+    padding: 0.8rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 15px;
+    text-align: center;
+}
+
+button:hover{
+    background-color: #d1d1d1;
+}
