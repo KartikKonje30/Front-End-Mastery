@@ -4,13 +4,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 25vh;
-    gap: 1.5rem;
+    padding-top: 12vh;
+    gap: 1rem;
 }
 
 .formHead{
     font-size: 3rem;
     font-weight: 400;
+}
+
+.formInputField{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 input{
@@ -26,9 +33,34 @@ h2{
     font-weight: 400;
 }
 
+button{
+    border-radius: 35px;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
 p{
     font-family: 'digital tech';
     font-size: 1.2rem;
     font-weight: 400;
     color: rgb(64, 222, 64);
+    padding: 1.4rem;
+    border-radius: 25px;
+    background-color: rgb(67, 67, 67);
+    cursor: pointer;
+}
+
+#liveText{
+    padding-top: 0;
+    background-color: transparent;
+}
+
+#outputTabs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
