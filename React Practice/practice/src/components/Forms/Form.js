@@ -1,6 +1,6 @@
 
 import './Form.css'
-import {useState} from 'react';
+import { useState } from 'react';
 import { IoMdCut } from "react-icons/io";
 import { Tooltip } from 'react-tooltip'
 
@@ -14,6 +14,7 @@ export default function Form(){
         newInputField.innerHTML = input;
         outputField.appendChild(newInputField);
     }
+
 
     return(
         <>
