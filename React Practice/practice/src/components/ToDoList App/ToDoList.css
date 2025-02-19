@@ -1,0 +1,100 @@
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.todoListUi{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    background-color: white;
+    color: black;
+    width: 460px;
+    height: 600px;
+    border-radius: 15px;
+    margin-top: 5rem;
+}
+
+h1{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.heading{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    user-select: none;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+input{
+    flex-grow: 1;
+    height: 1.8rem;
+    background-color: rgb(229, 229, 229);
+    border-radius: 35px;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+.addButton{
+    background-color: rgb(255, 119, 0);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    width: 7rem;
+    border-radius: 35px;
+    padding: 1.3rem;
+    position: absolute;
+    margin-left: 18rem;
+    cursor: pointer;
+}
+
+.taskList{
+    margin-top: 1.5rem;
+    gap: 2rem;
+}
+
+.TaskItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.TaskUI{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon{
+    width: 1.6rem;
+    height: 1.6rem;
+    cursor: pointer;
+}
+
+.deleteIcon{
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+}
