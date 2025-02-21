@@ -6,7 +6,7 @@ import {useRef, useState, useEffect} from 'react';
 
 export default function ToDoList(){
 
-    let [todoList, setToDoList] = useState([])
+    let [todoList, setToDoList] = useState(localStorage.getItem('todos') ? JSON.parse(localStorage.getItem('todos')) : [])
 
     const inputRef = useRef();
 
@@ -47,7 +47,9 @@ export default function ToDoList(){
 
     }
 
-    useEffect(() => {},[todoList])
+    useEffect(() => {
+        localStorage.setItem("todos",JSON.stringify(todoList))
+    },[todoList])
 
     return (
         <>
