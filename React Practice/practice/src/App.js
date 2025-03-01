@@ -2,7 +2,8 @@
 // import Counter from './components/Counter App/Counter'
 // import Form from './components/Forms/Form';
 import './App.css'
-import ToDoList from './components/ToDoList App/ToDoList';
+import QRGen from './components/QR code Generator/QRGen';
+// import ToDoList from './components/ToDoList App/ToDoList';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
     <div className="App">
     {/* <Counter /> */}
     {/* <Form /> */}
-    <ToDoList />
+    {/* <ToDoList /> */}
+    <QRGen />
     </div>
     </>
   );

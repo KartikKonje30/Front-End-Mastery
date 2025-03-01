@@ -1,0 +1,51 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.search-section{
+    display: flex;
+    gap: 1rem;
+}
+
+button{
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(26, 142, 26);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0.8rem;
+}
+
+.output-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.searchbar{
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.toolkit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
