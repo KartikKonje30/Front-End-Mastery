@@ -1,0 +1,108 @@
+
+* React :
+
+React is a javascript library which is a single page application.
+React focuses on component based approach and making reusable components.
+React is not a one thing solution to all it does require support from other frameworks and packages as well.
+
+React does not have its own router so you need react-router
+React is also used for creating both mobile & web applications.
+React-DOM for web applications
+React-Native for mobile applications
+
+* There are two ways of creating a react application
+
+1. using traditional way
+    npx create-react-app projectname
+    npx - node package executor
+
+This method takes a bit time to actually download and configure all node modules and packages
+also for running app you use 
+    npm run start or npm start
+you can write files in .js extension
+
+2. using a bundler like vite
+    npm create vite@latest
+
+This method is quite efficient as it takes less time
+but you have to install npm seperately 
+also for running app you use
+    npm run dev 
+you need to write files in .jsx extension only
+because it allows you to easily write html in js environment
+
+* Babel: 
+It is a javascript Compiler which transpiles modern javascript syntax into code,
+that can run in all environment when writing react components.
+It helps React applications run on older browsers by converting modern JavaScript code into a backward-compatible version. 
+How does Babel work in React?
+Babel translates JSX code into JavaScript code. 
+It also translates modern JavaScript features like arrow functions and destructuring assignments. 
+Babel offers plugins that allow developers to use new JavaScript syntax without waiting for browser support. 
+
+* Webpack: 
+Webpack is a JavaScript module bundler that's used with React to manage dependencies and build bundles of assets. 
+
+It's a free, open-source tool that can: 
+- Bundle JavaScript files and other assets into a single file
+- Transpile modern JavaScript code into older versions
+- Optimize performance by reducing HTTP requests
+- Split large bundles into smaller chunks that can be loaded on-demand
+- Manage assets like images, fonts, and styles
+- Automatically handle dependencies
+- Ensure modules and libraries are loaded in the right order
+
+* How does react works in the background ?
+
+It all starts, when we understand a react method known as ReactDOM.createRoot()
+react has a different kind of methods/properties used for performing different operations
+
+* Understanding DOM :
+you can observe when you create a new element in an HTML
+DOM repaints the entire HTML again and a new Document is loaded and thus page reloads
+The page reloading signifies that the DOM has replainted a new DOM Tree.
+
+But in react this constant reloading of the page is solved.
+
+But in UI it is not necessary for every update to be applied immediately.
+As some values depends on network call so if we update a value it might get update immediately via a network call.
+So we will have to update it again. To avoid this overhead we can drop the updation calls for the immediate value update.
+We need to use some algorithm or wait for some seconds before actually updating UI element after receiving the end result value.
+
+So to handle this React team came up with a new core algorithm called React Fiber.
+
+* React Fiber :
+
+The goal of React Fiber is to increase its suitability for areas like animation, layout, and gestures. 
+Its headline feature is incremental rendering: the ability to split rendering work into chunks and spread it out over multiple frames.
+
+Other key features include 
+the ability to pause, abort, or reuse work as new updates come in; 
+the ability to assign priority to different types of updates; 
+and new concurrency primitives.
+
+* Hydration Concept: 
+When a page is loaded the elements are first painted but cannot be interacted with because javascript the logic for each interactive element is not yet injected this is nothing but Hydration.
+Hydration is a process where after a weblayout is loaded, Javascript is injected.
+Hydration is used in React Filters efficiently.
+
+Say when we create an component, which is actually an function and which returns some JSX
+and import it into the main/index.js file and add it to the render method 
+It creates its own DOM a like tree structure i.e. reconciliation 
+
+* Reconciliation is in a modern way and popularly known an 'Virtual DOM'
+which is used to reconsider or tracks the newly created virtual DOM with the previous updated DOM
+and it uses a diffing algorithm which differentiates between the two DOM and only updates the changes required
+A change in a state or a value in react leads to re-render of the app, updates using react useState hook
+
+
+
+
+
+
+
+
+
+
+
+
