@@ -88,13 +88,16 @@ Hydration is used in React Filters efficiently.
 
 Say when we create an component, which is actually an function and which returns some JSX
 and import it into the main/index.js file and add it to the render method 
-It creates its own DOM a like tree structure i.e. reconciliation 
+It creates its own DOM a like tree structure treating different elements as nodes that describes the app and saved in the memory i.e. reconciliation 
 
-* Reconciliation is in a modern way and popularly known an 'Virtual DOM'
+* Reconciliation is the algorithm behind what is popularly understood an 'Virtual DOM'
 which is used to reconsider or tracks the newly created virtual DOM with the previous updated DOM
-and it uses a diffing algorithm which differentiates between the two DOM and only updates the changes required
+and it uses a Diffing algorithm which differentiates between the two DOM and only updates the changes required
 A change in a state or a value in react leads to re-render of the app, updates using react useState hook
 
+The key points are:
+- Different component types are assumed to generate substantially different trees. React will not attempt to diff them, but rather replace the old tree completely.
+- Diffing of lists is performed using keys. Keys should be "stable, predictable, and unique."
 
 
 
