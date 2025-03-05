@@ -1,12 +1,15 @@
 
-import BGChange from './components/BGColorChange/BGChange'
+// import BGChange from './components/BGColorChange/BGChange'
+import PassGen from "./components/PasswordGenerator/PassGen"
+
 
 function App() {
 
   return (
     <>
       <div>
-      <BGChange />
+      {/* <BGChange /> */}
+      <PassGen />
       </div>
     </>
   )
