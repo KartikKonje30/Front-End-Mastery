@@ -1,5 +1,4 @@
 
-import './App.css';
 import BGChange from './components/BGColorChange/BGChange'
 
 function App() {
