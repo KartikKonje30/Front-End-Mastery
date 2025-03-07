@@ -1,12 +1,12 @@
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import InputBox from '../../components/InputBox';
 import useCurrencyInfo from '../../hooks/useCurrencyInfo';
 
 export default function CurrencyConverter () {
 
     let [amount, setAmount] = useState('');
-    let [from, setForm] = useState('usd');
+    let [from, setForm] = useState('usa');
     let [to, setTo] = useState('inr');
     let [convertedAmt, setConvertedAmt] = useState('');
 
@@ -14,9 +14,13 @@ export default function CurrencyConverter () {
 
     let options = Object.keys(currencyInfo)
 
-    const convert = () => {
+    function convert (){
         setConvertedAmt(amount * currencyInfo[to])
     }
+
+    console.log(from);
+    console.log(to);
+
 
 
   return (
@@ -39,7 +43,7 @@ export default function CurrencyConverter () {
                         label="From"
                         amount={amount}
                         onAmountChange={(amount) => setAmount(amount)}
-                        onCurrencyChange={(currency) => setForm(currency)}
+                        onCurrencyChange={(from) => setForm(from)}
                         currencyOption={options}  
                         selectCurrency={from}                
                         />
@@ -57,7 +61,7 @@ export default function CurrencyConverter () {
                         <InputBox
                             label="To"
                             amount={convertedAmt}
-                            onAmountChange={(amount) => setConvertedAmt(amount)}
+                            onAmountChange={(convertedAmt) => setConvertedAmt(convertedAmt)}
                             onCurrencyChange={(currency) => setTo(currency)}
                             currencyOption={options}  
                             selectCurrency={to} 
