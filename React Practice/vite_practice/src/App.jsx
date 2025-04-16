@@ -1,7 +1,7 @@
 
 // import BGChange from './Projects/BGColorChange/BGChange'
 // import PassGen from "./Projects/PasswordGenerator/PassGen"
-import CurrencyConverter from "./Projects/CurrencyConvertor/CurrencyConverter"
+// import CurrencyConverter from "./Projects/CurrencyConvertor/CurrencyConverter"
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <div>
       {/* <BGChange /> */}
       {/* <PassGen /> */}
-      <CurrencyConverter />
+      {/* <CurrencyConverter /> */}
       </div>
     </>
   )
