@@ -1,16 +1,12 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+body{
+  background-image: linear-gradient(to right, #3446AA , #000330); 
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-Epilogue {
+  font-family: 'Epilogue';
+  
 }
 
 a {
@@ -30,39 +26,149 @@ body {
   min-height: 100vh;
 }
 
+
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 2.1em;
+  letter-spacing: 10px;
+  color: white;
+  line-height: 20px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+h2 {
+  font-size: 1.2em;
+  letter-spacing: 4px;
+  color: white;
+  line-height: 10px;
+}
+
+.todo-card{
+  background-color: #000330;
+  padding: 42px;
+  border-radius: 25px;
+
+}
+
+.title{
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  width: 450px;
+  border: solid 3px #5066d0;
+  border-radius: 35px;
+  padding: 28px;
+  gap: 0;
+}
+
+.tasks-display{
+  width: 120px;
+  height: 120px;
+  background-color: #848DFF;
+  color: white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tasks-count{
+  font-size: 2.4em;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: white;
+  line-height: 10px;
+}
+
+.input-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2rem;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.input-box{
+  background-color: #12153e;
+  border: solid 2px #5066d0;
+  border-radius: 15px;
+  padding: 12px;
+  width: 100%;
+  height: 30px;
+  color: white;
+  font-size: medium;
+  outline: none;
+}
+
+.input-button{
+  background-color: #848DFF;
+  height: 60px;
+  width: 68px;
+  color: #000330;
+  border-radius: 100px;
+  outline: none;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  font-size: 28px;
+  user-select: none;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.input-button:hover{
+  background-color: #3446AA;
+  color: white;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 2rem;
+  margin-left: 4px;
+  margin-right: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  background-color: #12153e;
+  border: solid 1px #5066d0;
+  border-radius: 15px;
+  padding: 12px;
+  height: 30px;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: left;
+  outline: none;
+  cursor: pointer;
+}
+
+li:hover{
+  background-color: #2f3261;
+}
+
+.input-checkbox{
+  width: 24px;
+  height: 24px;
+  border-radius: 25px;
+  background-color: #000330;
+  border: solid 2px #848DFF;
+  cursor: pointer;
+}
+
+.input-checkbox:hover{
+  background-color: #00fff7;
+}
+
+.task-input{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
 }
